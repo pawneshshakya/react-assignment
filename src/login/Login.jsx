@@ -33,7 +33,7 @@ function Login() {
     const { errors, isSubmitting } = formState;
 
     function onSubmit({ username, password }) {
-        return dispatch(authActions.login({ username, password }));
+        return dispatch(authActions.login({ email: username, password }));
     }
 
     return (
